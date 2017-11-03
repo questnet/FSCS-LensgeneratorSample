@@ -67,6 +67,11 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\SampleInput\SampleInput\SampleInput.fsproj">
+      <Name>SampleInput</Name>
+      <Project>{c4a3362f-b1ca-4275-be42-0d4381bc7d91}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\SampleInput.Lenses\SampleInput.Lenses.fsproj">
       <Name>SampleInput.Lenses</Name>
       <Project>{f0631fda-fccf-4d21-9c43-8f5d7887f4a5}</Project>
