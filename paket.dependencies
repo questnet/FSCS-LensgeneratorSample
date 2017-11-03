@@ -1,0 +1,11 @@
+source https://www.nuget.org/api/v2
+nuget Aether
+
+group Build
+  source https://nuget.org/api/v2
+  
+  nuget FAKE
+  nuget FSharp.Compiler.Tools
+  nuget FSharp.Formatting
+
+  github fsharp/FAKE modules/Octokit/Octokit.fsx
