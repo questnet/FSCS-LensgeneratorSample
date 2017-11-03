@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>c4a3362f-b1ca-4275-be42-0d4381bc7d91</ProjectGuid>
+    <ProjectGuid>2a22f295-ac9d-4ba4-86a6-f35690de7653</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>SampleInput</RootNamespace>
-    <AssemblyName>SampleInput</AssemblyName>
+    <RootNamespace>SampleUsage</RootNamespace>
+    <AssemblyName>SampleUsage</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.1.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Name>SampleInput</Name>
+    <Name>SampleUsage</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,7 +51,7 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="Library.fs" />
+    <Compile Include="Library1.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
