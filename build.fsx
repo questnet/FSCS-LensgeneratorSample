@@ -233,13 +233,17 @@ let buildSolutions() =
     solutionFiles
     |> Seq.iter ^ build (setParams "Build")
 
+let doNothing() = ()
+
 Target "Bootstrap" bootstrap
 Target "Clean" cleanSolutions
 Target "Build" buildSolutions
+Target "All" doNothing
 
 "Bootstrap"
     ==> "Clean"
     ==> "Build"
+    ==> "All"
 
 // start build
-RunTargetOrDefault "Build"
+RunTargetOrDefault "All"
