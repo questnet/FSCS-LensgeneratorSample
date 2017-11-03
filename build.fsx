@@ -131,7 +131,11 @@ module Lenses =
                 ProjectDirectory = currentDirectory </> "SampleInput" </> "SampleInput"
                 ProjectFileName = currentDirectory </> "SampleInput" </> "SampleInput" </> "SampleInput.fsproj"
                 OutputFileName = None //if single file output is desired: currentDirectory </> "SampleUsage" </>"SampleInput.Lenses" </> "Lenses.fs"
-                OutputDir = Some(currentDirectory </> "SampleUsage" </>"SampleInput.Lenses")
+                OutputDir = Some(currentDirectory </> "SampleUsage" </> "SampleInput.Lenses")
+
+                // if you use multi file output, you probably want your lens project file updated
+                OutputProjectFile =  Some(currentDirectory </> "SampleUsage" </> "SampleInput.Lenses" </> "SampleInput.Lenses.fsproj")
+
                 ErrorFileName = None // console, if you prefer a file: Some( currentDirectory </> "SampleUsage" </>"SampleInput.Lenses" </> "LensErrors.txt" )
                 OutputNamespace = Some("SampleInput.Lenses")
                 SystemLibraries = ["System.Numerics"] // System.ValueTuple or whatever already installed lib you need
