@@ -157,7 +157,8 @@ module Lenses =
                     // equivalent to default
                     //(findToolFolderInSubPath "FSCSLensGenerator.exe" (currentDirectory </> "packages" </> "build" </> "FSCS-LensGenerator" </> "tools")) </> "FSCSLensGenerator.exe"
                     // 0.4.0, latest tfs release
-                    (findToolFolderInSubPath "FSCSLensGenerator.exe" (currentDirectory </> "OldReleases" </> "FSCS-LensGenerator.0.4.0.tools")) </> "FSCSLensGenerator.exe"
+                    //(findToolFolderInSubPath "FSCSLensGenerator.exe" (currentDirectory </> "OldReleases" </> "FSCS-LensGenerator.0.4.0.tools")) </> "FSCSLensGenerator.exe"
+                    (findToolFolderInSubPath "FSCSLensGenerator.exe" (currentDirectory </> "OldReleases" </> "FSCS-LensGenerator.0.4.2.tools")) </> "FSCSLensGenerator.exe"
             }
         
         let generate() = 
