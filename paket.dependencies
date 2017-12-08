@@ -7,3 +7,7 @@ group Build
   nuget FAKE
   nuget FSharp.Compiler.Tools
   nuget FSharp.Formatting
+  
+  source https://www.myget.org/F/embix/api/v3/index.json
+
+  nuget FSCSLensGenerator  ~> 0.4.2
